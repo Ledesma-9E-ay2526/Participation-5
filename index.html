@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modified Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1>Sum of Two Variables</h1>
+            <form>
+                <label> First Number
+                <input type="number" id="Num1"> </input> </label>
+                <label> 
+                Second Number
+                <input type="number" id="Num2"> </input>
+                </label>
+                <p id="result"> The sum of two variables is:</p>
+                 <button type="button" class="btn btn-info" onmouseover="plus()"> Calculate </button>
+                <button type="button" class="btn btn-info" onclick="window.location.reload()">Reload Page</button>
+                </form>
+                <script> function plus(){
+                    let var1=document.getElementById("Num1").value;
+                    let var2=document.getElementById("Num2").value;
+                    let result=Number(var1) + Number(var2);
+                    document.getElementById("result").innerHTML="The sum of two variables is:" + result;
+                }
+                </script>                
+                    
+    </div>
+</body>
+</html>
